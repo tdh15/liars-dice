@@ -5,7 +5,7 @@
 import Experiment2p from './Experiment2p.js';
 import Experiment3p from './Experiment3p.js';
 
-const standardIterNum = 10000;
+const standardIterNum = 50000;
 let experiments = [0]; // so it's 1-indexed
 function runExperimentNumber(experimentNumber) {
     experiments[experimentNumber].run();
@@ -168,6 +168,14 @@ const E17outputFilename = 'Experiment17.png';
 let experiment17 = new Experiment3p(E17title, standardIterNum, E17sideAPlayerNames, E17sideBPlayerNames, E17sideCPlayerNames, E17playersToGraph, E17outputFilename);
 experiments.push(experiment17);
 
+// Experiment 18 (Matt Dodge) - [P6/P'6]v[Q1/Q'1]
+const E18title = "Experiment 18";
+const E18sideAPlayerNames = ['P6', 'P\'6'];
+const E18sideBPlayerNames = ['Q1', 'Q\'1'];
+const E18playersToGraph = ['Q1', 'Q\'1'];
+const E18outputFilename = 'ExperimentMD.png';
+let experiment18 = new Experiment2p(E18title, standardIterNum, E18sideAPlayerNames, E18sideBPlayerNames, E18playersToGraph, E18outputFilename);
+experiments.push(experiment18);
 
 
 
@@ -177,4 +185,5 @@ experiments.push(experiment17);
 
 
 
-runExperimentNumber(6);
+
+runExperimentNumber(18);
