@@ -55,7 +55,7 @@ export default class ProbPlayer extends Player {
         // If there are no statistically feasible states remaining, you call. But!
         // There's one corner case. If you've exhausted all options and they
         // all seem statistically infeasible, but you know that to call the previous bid
-        // guarantees a loss becasue your own dice make up enough of the quantity to
+        // guarantees a loss because your own dice make up enough of the quantity to
         // make the previous bid correct: increase the quantity of the previous bid by 1.
         // You're banking on them actually having the dice they bid, and thus, supplemented
         // with your dice, you getting kinda lucky.
